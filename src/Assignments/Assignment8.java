@@ -22,11 +22,11 @@ public class Assignment8 {
 		
 		TakesScreenshot ts =  (TakesScreenshot)driver;
 		
-		File f = ts.getScreenshotAs(OutputType.FILE);
+		File source = ts.getScreenshotAs(OutputType.FILE);
 		
 		File des = new File("C:\\Samad\\Selenium\\SeleniumBasics\\screenshots\\sss.jpg");
 		
-		Files.copy(f, des);
+		Files.copy(source, des);
 		
 		driver.close();
 		
