@@ -24,9 +24,9 @@ public class Assignment8 {
 		
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		
-		File des = new File("C:\\Samad\\Selenium\\SeleniumBasics\\screenshots\\sss.jpg");
+		File destination = new File("C:\\Samad\\Selenium\\SeleniumBasics\\screenshots\\sss.jpg");
 		
-		Files.copy(source, des);
+		Files.copy(source, destination);
 		
 		driver.close();
 		
